@@ -189,9 +189,9 @@ export default function Home() {
     success("重置全部条件");
   };
   return (
-    <main className="flex min-h-screen flex-col items-center p-16 gap-6">
+    <main className="flex min-h-screen flex-col items-center p-16 pt-8 gap-6 bg-slate-100/50 z-[-2]">
       {contextHolder}
-      <div className="relative flex  flex-col  gap-3 place-items-center mb-10  z-[-1]">
+      <div className="relative flex  flex-col  gap-3 place-items-center mb-6">
         {/* before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] before:absolute before:h-[300px] */}
         {/* after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] */}
         {/* <Image
@@ -203,14 +203,17 @@ export default function Home() {
           height={37}
           priority
         /> */}
-        <h1 className="mb-3 mt-10 text-4xl font-bold text-black duration-1000 ease-in-out animate-in fade-in slide-in-from-bottom-3">
+        <h1 className="z-10 mb-3 mt-6 text-4xl font-bold text-black duration-1000 ease-in-out animate-in fade-in slide-in-from-bottom-3">
           Running
           <span className="relative whitespace-nowrap text-[#3290EE]">
             Code
             <SquigglyLines />
           </span>
         </h1>
-        <p>刷题吧, 少年!</p>
+        <p className="max-w-xl text-center text-slate-400">
+          目前面试笔试中大量出现的题目都是出自 剑指 offer、牛客 101 以及 lc
+          hot100, 所以我按照分类收录了这些题目, 刷题吧, 王子公主们🤣!
+        </p>
       </div>
 
       <div className="flex gap-3">
