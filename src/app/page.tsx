@@ -2,15 +2,23 @@
 import { Button, Input, Table, Tag, message } from "antd";
 import Image from "next/image";
 import type { TableColumnsType, TableProps } from "antd";
-import { SearchOutlined } from "@ant-design/icons";
+import {
+  GithubOutlined,
+  SearchOutlined,
+  TwitterOutlined,
+  XOutlined,
+} from "@ant-design/icons";
 import data from "../../public/data.json"; // 根据实际路径调整
 import { useState } from "react";
 const { Search } = Input;
 import type { SearchProps } from "antd/es/input/Search";
 import SquigglyLines from "@/components/SquigglyLines";
+import Link from "next/link";
+import Footer from "@/components/footer";
 type Grade = "easy" | "medium" | "hard";
 
 interface DataType {
+  idx: number;
   name: string; // 题目
   url: string; //url
   grade: Grade; // easy medium hard
@@ -51,14 +59,20 @@ export default function Home() {
 
   const columns: TableColumnsType<DataType> = [
     {
-      title: "Name",
+      title: "index",
+      dataIndex: "idx",
+      key: "idx",
+    },
+    {
+      title: "题目名",
       dataIndex: "name",
       key: "name",
-      filterSearch: true,
-      filters: [],
+      // filterSearch: true,
+      filteredValue: filteredInfo.name || null,
       onFilter: (value, record) => {
+        // console.log("name filter ", value, record);
         if (typeof value === "string") {
-          record.name.startsWith(value);
+          return record.name.includes(value);
         }
         return false;
       },
@@ -67,7 +81,7 @@ export default function Home() {
     },
 
     {
-      title: "grade",
+      title: "难度",
       dataIndex: "grade",
       key: "grade",
       filters: [
@@ -94,7 +108,7 @@ export default function Home() {
       sortDirections: ["ascend", "descend"],
     },
     {
-      title: "algoCategory",
+      title: "分类",
       dataIndex: "algoCategory",
       key: "algoCategory",
       filters: [{ text: "链表", value: "链表" }],
@@ -150,10 +164,9 @@ export default function Home() {
   // 搜索函数
   const onSearch: SearchProps["onSearch"] = (value, _e, info) => {
     console.log(info?.source, value);
-    setFilteredInfo((prevFilteredInfo) => ({
-      ...prevFilteredInfo,
-      name: value ? [value] : null,
-    }));
+    setFilteredInfo({
+      name: [value],
+    });
   };
 
   const [messageApi, contextHolder] = message.useMessage();
@@ -173,7 +186,7 @@ export default function Home() {
   };
 
   const handleChange: OnChange = (pagination, filters, sorter) => {
-    console.log("Various parameters", pagination, filters, sorter);
+    // console.log("Various parameters", pagination, filters, sorter);
     setFilteredInfo(filters);
     setSortedInfo(sorter as Sorts);
   };
@@ -188,10 +201,11 @@ export default function Home() {
     setSortedInfo({});
     success("重置全部条件");
   };
+
   return (
-    <main className="flex min-h-screen flex-col items-center p-16 pt-8 gap-6 bg-slate-100/50 z-[-2]">
+    <main className="flex min-h-screen flex-col items-center p-8 pt-8 gap-6 bg-slate-100/50 z-[-2]">
       {contextHolder}
-      <div className="relative flex  flex-col  gap-3 place-items-center mb-6">
+      <div className="relative flex  flex-col  gap-3 place-items-center mb-3 w-2/3">
         {/* before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] before:absolute before:h-[300px] */}
         {/* after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] */}
         {/* <Image
@@ -203,6 +217,37 @@ export default function Home() {
           height={37}
           priority
         /> */}
+        <header className="flex justify-between w-full">
+          <Link href="/">
+            <Image
+              className="relative rounded-full"
+              // dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert
+              src="/ai.svg"
+              alt="Logo"
+              width={45}
+              height={40}
+              priority
+            />
+          </Link>
+
+          <div className="flex items-center gap-3 ">
+            <a
+              href="https://github.com/tonyljx/running-leetcode"
+              target="_blank"
+              className="p-2 hover:bg-slate-200/85 transition-colors duration-150 rounded"
+            >
+              <GithubOutlined className="text-[24px]" />
+            </a>
+            <a
+              href="https://twitter.com/abc30037274"
+              target="_blank"
+              className="p-2 hover:bg-slate-200/85 transition-colors duration-150 rounded"
+            >
+              <XOutlined className="text-[24px]" />
+            </a>
+          </div>
+        </header>
+
         <h1 className="z-10 mb-3 mt-6 text-4xl font-bold text-black duration-1000 ease-in-out animate-in fade-in slide-in-from-bottom-3">
           Running
           <span className="relative whitespace-nowrap text-[#3290EE]">
@@ -217,16 +262,19 @@ export default function Home() {
       </div>
 
       <div className="flex gap-3">
-        {/* <Search
-          placeholder="input search text"
+        <Search
+          placeholder="输入题目名"
           onSearch={onSearch}
           style={{ width: 200 }}
-        /> */}
-        <Button onClick={clearFilters}>Clear filters</Button>
-        <Button onClick={clearAll}>Clear filters and sorters</Button>
+          enterButton
+        />
+        <Button onClick={clearFilters}>删除筛选</Button>
+        <Button onClick={clearAll}>删除筛选过滤</Button>
       </div>
       <div className="w-2/3">
         <Table
+          className="w-full"
+          rowKey="idx"
           columns={columns}
           dataSource={dataList}
           pagination={{
@@ -238,6 +286,8 @@ export default function Home() {
           onChange={handleChange}
         />
       </div>
+
+      <Footer />
     </main>
   );
 }
