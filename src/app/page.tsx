@@ -1,61 +1,64 @@
 "use client";
-import { Button, Input, Table, Tag, message } from "antd";
+import { Button, Input, Rate, Table, Tag, message } from "antd";
 import Image from "next/image";
 import type { TableColumnsType, TableProps } from "antd";
-import {
-  GithubOutlined,
-  SearchOutlined,
-  TwitterOutlined,
-  XOutlined,
-} from "@ant-design/icons";
+import { GithubOutlined, XOutlined } from "@ant-design/icons";
 import data from "../../public/data.json"; // 根据实际路径调整
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const { Search } = Input;
 import type { SearchProps } from "antd/es/input/Search";
 import SquigglyLines from "@/components/SquigglyLines";
 import Link from "next/link";
 import Footer from "@/components/footer";
-type Grade = "easy" | "medium" | "hard";
-
-interface DataType {
-  idx: number;
-  name: string; // 题目
-  url: string; //url
-  grade: Grade; // easy medium hard
-  tags: string[]; // 属于剑指 offer, hot100,牛客 hot100
-  algoCategory: string; // 算法题类型
-  ext: string; //补充思路
-}
+import { Grade, DataType } from "@/types/lc";
+import { getGradeValue } from "@/lib/utils";
+import { useLocalStorage } from "@/hooks/useLocalStorage";
 // 配置受控 filter 的 type
 type OnChange = NonNullable<TableProps<DataType>["onChange"]>;
 type Filters = Parameters<OnChange>[1];
-
 type GetSingle<T> = T extends (infer U)[] ? U : never;
 type Sorts = GetSingle<Parameters<OnChange>[2]>;
-
-/**
- * 辅助函数-获取难度对应的映射
- * @param grade
- * @returns
- */
-function getGradeValue(grade: Grade): number {
-  const gradeMap: { [K in Grade]: number } = {
-    easy: 1,
-    medium: 2,
-    hard: 3,
-  };
-  return gradeMap[grade];
+interface Iretain {
+  [key: number]: number;
 }
 
-export default function Home() {
-  // 直接将导入的JSON赋值给一个变量，类型为DataType[]
-  const dataList: DataType[] = data.map((item) => ({
-    ...item,
-    grade: item.grade as Grade,
-  }));
+const desc = ["terrible", "bad", "normal", "good", "wonderful"];
 
+export default function Home() {
   const [filteredInfo, setFilteredInfo] = useState<Filters>({});
   const [sortedInfo, setSortedInfo] = useState<Sorts>({});
+
+  // localStorage 存储的记忆数组
+  const [retain, setRetain, clear] = useLocalStorage<Iretain>("remember", {});
+
+  const handleRetainClick = (record: DataType, value: number) => {
+    // 找到对应的 idx
+    const idx = record.idx;
+    setRetain({ ...retain, [idx]: value });
+    success("成功设置记忆值");
+  };
+
+  // 直接将导入的JSON赋值给一个变量，类型为DataType[]
+  // const dataList: DataType[] = data.map((item) => ({
+  //   ...item,
+  //   grade: item.grade as Grade,
+  //   // 增加 retain 属性
+  //   retain: retain[item.idx] || 0, // 使用 retain 中对应的值，如果不存在则默认为 0
+  // }));
+  const [dataList, setDataList] = useState<DataType[]>([]);
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    const updatedDataList = data.map((item) => ({
+      ...item,
+      grade: item.grade as Grade,
+      retain: retain[item.idx] || 0,
+    }));
+    setDataList(updatedDataList);
+    setLoading(false);
+  }, [retain]);
+
+  console.log(loading);
 
   const columns: TableColumnsType<DataType> = [
     {
@@ -157,6 +160,21 @@ export default function Home() {
         <a href={value} target="_blank">
           URL
         </a>
+      ),
+    },
+    {
+      title: "retain",
+      dataIndex: "retain",
+      key: "retain",
+      render: (_, record) => (
+        <Rate
+          onChange={(value) => {
+            handleRetainClick(record, value);
+          }}
+          tooltips={desc}
+          key={record.idx}
+          value={retain[record.idx]}
+        ></Rate>
       ),
     },
   ];
@@ -270,6 +288,14 @@ export default function Home() {
         />
         <Button onClick={clearFilters}>删除筛选</Button>
         <Button onClick={clearAll}>删除筛选过滤</Button>
+        <Button
+          onClick={() => {
+            clear();
+            success("删除本地缓存");
+          }}
+        >
+          删除本地缓存
+        </Button>
       </div>
       <div className="w-2/3">
         <Table
@@ -284,6 +310,7 @@ export default function Home() {
             showSizeChanger: true,
           }}
           onChange={handleChange}
+          loading={loading}
         />
       </div>
 
