@@ -13,6 +13,9 @@ import Footer from "@/components/footer";
 import { Grade, DataType } from "@/types/lc";
 import { getGradeValue } from "@/lib/utils";
 import { useLocalStorage } from "@/hooks/useLocalStorage";
+import Ref from "@/components/page/ref";
+import CustomModal from "@/components/Modal";
+import MyTimeLine from "@/components/time-line";
 // 配置受控 filter 的 type
 type OnChange = NonNullable<TableProps<DataType>["onChange"]>;
 type Filters = Parameters<OnChange>[1];
@@ -249,20 +252,23 @@ export default function Home() {
           </Link>
 
           <div className="flex items-center gap-3 ">
-            <a
+            <Link
               href="https://github.com/tonyljx/running-leetcode"
               target="_blank"
               className="p-2 hover:bg-slate-200/85 transition-colors duration-150 rounded"
             >
               <GithubOutlined className="text-[24px]" />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://twitter.com/abc30037274"
               target="_blank"
               className="p-2 hover:bg-slate-200/85 transition-colors duration-150 rounded"
             >
               <XOutlined className="text-[24px]" />
-            </a>
+            </Link>
+            <CustomModal buttonText="Changelog">
+              <MyTimeLine />
+            </CustomModal>
           </div>
         </header>
 
@@ -313,6 +319,8 @@ export default function Home() {
           loading={loading}
         />
       </div>
+
+      <Ref />
 
       <Footer />
     </main>
