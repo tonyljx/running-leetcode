@@ -7,4 +7,5 @@ export interface DataType {
   tags: string[]; // 属于剑指 offer, hot100,牛客 hot100
   algoCategory: string; // 算法题类型
   ext: string; //补充思路
+  [key: string]: any; // 添加索引签名
 }

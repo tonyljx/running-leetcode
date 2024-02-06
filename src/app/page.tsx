@@ -41,27 +41,24 @@ export default function Home() {
     success("成功设置记忆值");
   };
 
-  // 直接将导入的JSON赋值给一个变量，类型为DataType[]
-  // const dataList: DataType[] = data.map((item) => ({
-  //   ...item,
-  //   grade: item.grade as Grade,
-  //   // 增加 retain 属性
-  //   retain: retain[item.idx] || 0, // 使用 retain 中对应的值，如果不存在则默认为 0
-  // }));
   const [dataList, setDataList] = useState<DataType[]>([]);
-  const [loading, setLoading] = useState(false);
+
+  const [filterTableLength, setFilterTableLength] = useState(dataList.length);
+  // console.log(filterTableLength);
+
   useEffect(() => {
-    setLoading(true);
     const updatedDataList = data.map((item) => ({
       ...item,
       grade: item.grade as Grade,
       retain: retain[item.idx] || 0,
     }));
     setDataList(updatedDataList);
-    setLoading(false);
+    setFilterTableLength(updatedDataList.length);
   }, [retain]);
 
-  console.log(loading);
+  // console.log(dataList.length);
+
+  // console.log(loading);
 
   const columns: TableColumnsType<DataType> = [
     {
@@ -117,7 +114,24 @@ export default function Home() {
       title: "分类",
       dataIndex: "algoCategory",
       key: "algoCategory",
-      filters: [{ text: "链表", value: "链表" }],
+      filterMultiple: true,
+      filters: [
+        { text: "链表", value: "链表" },
+        { text: "二叉树", value: "二叉树" },
+        { text: "数组	", value: "数组" },
+        { text: "字符串", value: "字符串" },
+        { text: "回溯", value: "回溯" },
+        { text: "栈", value: "栈" },
+        { text: "队列", value: "队列" },
+        { text: "二分查找", value: "二分查找" },
+        { text: "哈希表", value: "哈希表" },
+        { text: "动态规划", value: "动态规划" },
+        { text: "贪心算法", value: "贪心算法" },
+        { text: "滑动窗口", value: "滑动窗口" },
+        { text: "堆", value: "堆" },
+        { text: "图", value: "图" },
+        { text: "位运算", value: "位运算" },
+      ],
       filteredValue: filteredInfo.algoCategory || null,
       onFilter: (value, record) => record.algoCategory === (value as string),
     },
@@ -128,14 +142,17 @@ export default function Home() {
       filterSearch: true,
       filteredValue: filteredInfo.tags || null,
       onFilter: (value, record) => {
+        // console.log("出处：", value, record);
+
         if (typeof value === "string") {
-          record.name.startsWith(value);
+          return record.tags.includes(value);
         }
+
         return false;
       },
       filters: [
         { text: "nowcoder101", value: "nowcoder101" },
-        { text: "leetcode", value: "leetcode" },
+        { text: "leetcode", value: "🔥 LeetCode Hot 100" },
       ],
       sorter: (a, b) => a.name.length - b.name.length,
       sortDirections: ["descend"],
@@ -210,6 +227,20 @@ export default function Home() {
     // console.log("Various parameters", pagination, filters, sorter);
     setFilteredInfo(filters);
     setSortedInfo(sorter as Sorts);
+    // console.log(filters);
+
+    // 设置长度
+    const filteredData = dataList.filter((item) => {
+      return Object.entries(filters).every(([key, value]) => {
+        if (!value || value.length === 0) {
+          return true;
+        }
+        return value.includes(item[key]);
+      });
+    });
+    // console.log("filterData ", filteredData);
+
+    setFilterTableLength(filteredData.length);
   };
 
   const clearFilters = () => {
@@ -281,7 +312,7 @@ export default function Home() {
         </h1>
         <p className="max-w-xl text-center text-slate-400">
           目前面试笔试中大量出现的题目都是出自 剑指 offer、牛客 101 以及 lc
-          hot100, 所以我按照分类收录了这些题目, 刷题吧, 王子公主们🤣!
+          hot100, 所以我按照分类收录了这些题目, 刷题吧, 王子公主们!🤣
         </p>
       </div>
 
@@ -316,7 +347,7 @@ export default function Home() {
             showSizeChanger: true,
           }}
           onChange={handleChange}
-          loading={loading}
+          footer={() => <div>收录题目数: {filterTableLength}</div>}
         />
       </div>
 
