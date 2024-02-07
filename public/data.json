@@ -1131,7 +1131,7 @@
     "url": "https://leetcode.cn/problems/jump-game?envType=featured-list&envId=2cktkvj?envType=featured-list&envId=2cktkvj",
     "grade": "medium",
     "tags": ["🔥 LeetCode Hot 100"],
-    "algoCategory": "贪心算法",
+    "algoCategory": "贪心",
     "ext": ""
   },
   {
@@ -1545,7 +1545,7 @@
     "url": "https://leetcode.cn/problems/meeting-rooms-ii?envType=featured-list&envId=2cktkvj?envType=featured-list&envId=2cktkvj",
     "grade": "medium",
     "tags": ["🔥 LeetCode Hot 100"],
-    "algoCategory": "贪心算法",
+    "algoCategory": "贪心",
     "ext": ""
   },
   {
@@ -1680,7 +1680,7 @@
     "url": "https://leetcode.cn/problems/queue-reconstruction-by-height?envType=featured-list&envId=2cktkvj?envType=featured-list&envId=2cktkvj",
     "grade": "medium",
     "tags": ["🔥 LeetCode Hot 100"],
-    "algoCategory": "贪心算法",
+    "algoCategory": "贪心",
     "ext": ""
   },
   {
@@ -1788,7 +1788,7 @@
     "url": "https://leetcode.cn/problems/task-scheduler?envType=featured-list&envId=2cktkvj?envType=featured-list&envId=2cktkvj",
     "grade": "medium",
     "tags": ["🔥 LeetCode Hot 100"],
-    "algoCategory": "贪心算法",
+    "algoCategory": "贪心",
     "ext": ""
   },
   {
@@ -1807,6 +1807,582 @@
     "grade": "medium",
     "tags": ["🔥 LeetCode Hot 100"],
     "algoCategory": "栈",
+    "ext": ""
+  },
+  {
+    "idx": 202,
+    "name": "数组中重复的数字",
+    "url": "https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/",
+    "grade": "easy",
+    "tags": ["剑指offer"],
+    "algoCategory": "数组",
+    "ext": ""
+  },
+  {
+    "idx": 203,
+    "name": "二维数组中的查找",
+    "url": "https://leetcode.cn/problems/search-a-2d-matrix-ii/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "数组",
+    "ext": ""
+  },
+  {
+    "idx": 204,
+    "name": "替换空格",
+    "url": "https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/",
+    "grade": "easy",
+    "tags": ["剑指offer"],
+    "algoCategory": "字符串",
+    "ext": ""
+  },
+  {
+    "idx": 205,
+    "name": "从尾到头打印链表",
+    "url": "https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/",
+    "grade": "easy",
+    "tags": ["剑指offer"],
+    "algoCategory": "链表",
+    "ext": ""
+  },
+  {
+    "idx": 206,
+    "name": "重建二叉树",
+    "url": "https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "二叉树",
+    "ext": ""
+  },
+  {
+    "idx": 207,
+    "name": "用两个栈实现队列",
+    "url": "https://leetcode.cn/problems/implement-queue-using-stacks/",
+    "grade": "easy",
+    "tags": ["剑指offer"],
+    "algoCategory": "栈和队列",
+    "ext": ""
+  },
+  {
+    "idx": 208,
+    "name": "斐波那契数列/青蛙跳台阶",
+    "url": "https://leetcode.cn/problems/fibonacci-number/",
+    "grade": "easy",
+    "tags": ["剑指offer"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 209,
+    "name": "旋转数组的最小数字",
+    "url": "https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/",
+    "grade": "hard",
+    "tags": ["剑指offer"],
+    "algoCategory": "数组",
+    "ext": ""
+  },
+  {
+    "idx": 210,
+    "name": "矩阵中的路径",
+    "url": "https://leetcode.cn/problems/word-search/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "回溯",
+    "ext": ""
+  },
+  {
+    "idx": 211,
+    "name": "机器人的运动范围",
+    "url": "https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "回溯",
+    "ext": ""
+  },
+  {
+    "idx": 212,
+    "name": "剪绳子",
+    "url": "https://leetcode-cn.com/problems/integer-break/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 213,
+    "name": "二进制中1的个数",
+    "url": "https://leetcode.cn/problems/number-of-1-bits/",
+    "grade": "easy",
+    "tags": ["剑指offer"],
+    "algoCategory": "位运算",
+    "ext": "考虑升级版"
+  },
+  {
+    "idx": 214,
+    "name": "数值的整数次方",
+    "url": "https://leetcode.cn/problems/powx-n/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "数学",
+    "ext": ""
+  },
+  {
+    "idx": 215,
+    "name": "删除链表的节点",
+    "url": "https://leetcode.cn/problems/delete-node-in-a-linked-list/",
+    "grade": "easy",
+    "tags": ["剑指offer"],
+    "algoCategory": "链表",
+    "ext": "考虑升级版"
+  },
+  {
+    "idx": 216,
+    "name": "正则表达式匹配",
+    "url": "https://leetcode.cn/problems/regular-expression-matching/",
+    "grade": "hard",
+    "tags": ["剑指offer"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 217,
+    "name": "表示数值的字符串",
+    "url": "https://leetcode.cn/problems/valid-number/",
+    "grade": "hard",
+    "tags": ["剑指offer"],
+    "algoCategory": "字符串",
+    "ext": ""
+  },
+  {
+    "idx": 218,
+    "name": "调整数组顺序使奇数在偶数前",
+    "url": "https://leetcode.cn/problems/sort-array-by-parity",
+    "grade": "easy",
+    "tags": ["剑指offer"],
+    "algoCategory": "数组",
+    "ext": ""
+  },
+  {
+    "idx": 219,
+    "name": "链表中倒数第K个节点",
+    "url": "https://leetcode.cn/problems/remove-nth-node-from-end-of-list/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "链表",
+    "ext": ""
+  },
+  {
+    "idx": 220,
+    "name": "链表中环的入口节点",
+    "url": "https://leetcode.cn/problems/linked-list-cycle-ii",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "链表",
+    "ext": ""
+  },
+  {
+    "idx": 221,
+    "name": "反转链表",
+    "url": "https://leetcode.cn/problems/reverse-linked-list/",
+    "grade": "easy",
+    "tags": ["剑指offer"],
+    "algoCategory": "链表",
+    "ext": "考虑迭代和递归"
+  },
+  {
+    "idx": 222,
+    "name": "合并两个排序的链表",
+    "url": "https://leetcode.cn/problems/merge-two-sorted-lists/",
+    "grade": "easy",
+    "tags": ["剑指offer"],
+    "algoCategory": "链表",
+    "ext": ""
+  },
+  {
+    "idx": 223,
+    "name": "树的子结构",
+    "url": "https://leetcode.cn/problems/subtree-of-another-tree/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "二叉树",
+    "ext": ""
+  },
+  {
+    "idx": 224,
+    "name": "二叉树的镜像",
+    "url": "https://leetcode.cn/problems/invert-binary-tree",
+    "grade": "easy",
+    "tags": ["剑指offer"],
+    "algoCategory": "二叉树",
+    "ext": ""
+  },
+  {
+    "idx": 225,
+    "name": "对称的二叉树",
+    "url": "https://leetcode.cn/problems/symmetric-tree/",
+    "grade": "easy",
+    "tags": ["剑指offer"],
+    "algoCategory": "二叉树",
+    "ext": ""
+  },
+  {
+    "idx": 226,
+    "name": "顺时针打印矩阵",
+    "url": "https://leetcode.cn/problems/spiral-matrix/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "数组",
+    "ext": ""
+  },
+  {
+    "idx": 227,
+    "name": "包含min函数的栈",
+    "url": "https://leetcode.cn/problems/min-stack/",
+    "grade": "easy",
+    "tags": ["剑指offer"],
+    "algoCategory": "栈和队列",
+    "ext": ""
+  },
+  {
+    "idx": 228,
+    "name": "栈的压入、弹出序列",
+    "url": "https://leetcode.cn/problems/validate-stack-sequences/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "栈和队列",
+    "ext": ""
+  },
+  {
+    "idx": 229,
+    "name": "从上到下打印二叉树",
+    "url": "https://leetcode.cn/problems/binary-tree-level-order-traversal/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "二叉树",
+    "ext": "考虑变体"
+  },
+  {
+    "idx": 230,
+    "name": "二叉搜索树的后序遍历序列",
+    "url": "https://leetcode.cn/problems/verify-preorder-sequence-in-binary-search-tree/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "二叉树",
+    "ext": "考虑先序遍历"
+  },
+  {
+    "idx": 231,
+    "name": "二叉树中和为某一值的路径",
+    "url": "https://leetcode.cn/problems/path-sum/",
+    "grade": "easy",
+    "tags": ["剑指offer"],
+    "algoCategory": "二叉树",
+    "ext": ""
+  },
+  {
+    "idx": 232,
+    "name": "复杂链表的复制",
+    "url": "https://leetcode.cn/problems/copy-list-with-random-pointer/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "链表",
+    "ext": ""
+  },
+  {
+    "idx": 233,
+    "name": "二叉搜索树与双向链表",
+    "url": "https://leetcode.cn/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "二叉树",
+    "ext": ""
+  },
+  {
+    "idx": 234,
+    "name": "序列化二叉树",
+    "url": "https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/",
+    "grade": "hard",
+    "tags": ["剑指offer"],
+    "algoCategory": "二叉树",
+    "ext": ""
+  },
+  {
+    "idx": 235,
+    "name": "字符串的排列",
+    "url": "https://leetcode.cn/problems/permutations/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "回溯",
+    "ext": "考虑重复元素"
+  },
+  {
+    "idx": 236,
+    "name": "数组中出现次数超过一半的数字",
+    "url": "https://leetcode.cn/problems/majority-element/",
+    "grade": "easy",
+    "tags": ["剑指offer"],
+    "algoCategory": "数组",
+    "ext": "考虑升级版"
+  },
+  {
+    "idx": 237,
+    "name": "最小的k个数",
+    "url": "https://leetcode.cn/problems/kth-largest-element-in-an-array/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "堆",
+    "ext": ""
+  },
+  {
+    "idx": 238,
+    "name": "数据流中的中位数",
+    "url": "https://leetcode.cn/problems/find-median-from-data-stream/",
+    "grade": "hard",
+    "tags": ["剑指offer"],
+    "algoCategory": "堆",
+    "ext": ""
+  },
+  {
+    "idx": 239,
+    "name": "连续子数组的最大和",
+    "url": "https://leetcode.cn/problems/maximum-subarray/",
+    "grade": "easy",
+    "tags": ["剑指offer"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 240,
+    "name": "1~n整数中1出现的次数",
+    "url": "https://leetcode.cn/problems/number-of-digit-one/submissions/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "数学",
+    "ext": ""
+  },
+  {
+    "idx": 241,
+    "name": "数字序列中某一位的数字",
+    "url": "https://leetcode.cn/problems/nth-digit/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "数学",
+    "ext": ""
+  },
+  {
+    "idx": 242,
+    "name": "把数组排成最小的数",
+    "url": "https://leetcode.cn/problems/largest-number/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "排序",
+    "ext": ""
+  },
+  {
+    "idx": 243,
+    "name": "把数字翻译成字符串",
+    "url": "https://leetcode.cn/problems/decode-ways/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 244,
+    "name": "礼物的最大价值",
+    "url": "https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 245,
+    "name": "最长不含重复字符的子字符串",
+    "url": "https://leetcode.cn/problems/longest-substring-without-repeating-characters/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "字符串",
+    "ext": ""
+  },
+  {
+    "idx": 246,
+    "name": "丑数",
+    "url": "https://leetcode.cn/problems/ugly-number-ii/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "数学",
+    "ext": "考虑优化解法"
+  },
+  {
+    "idx": 247,
+    "name": "第一个只出现一次的字符",
+    "url": "https://leetcode.cn/problems/first-unique-character-in-a-string/",
+    "grade": "easy",
+    "tags": ["剑指offer"],
+    "algoCategory": "哈希表",
+    "ext": ""
+  },
+  {
+    "idx": 248,
+    "name": "数组中的逆序对",
+    "url": "https://leetcode.cn/problems/reverse-pairs/",
+    "grade": "hard",
+    "tags": ["剑指offer"],
+    "algoCategory": "分治",
+    "ext": ""
+  },
+  {
+    "idx": 249,
+    "name": "两个链表的第一个公共节点",
+    "url": "https://leetcode.cn/problems/intersection-of-two-linked-lists/",
+    "grade": "easy",
+    "tags": ["剑指offer"],
+    "algoCategory": "链表",
+    "ext": ""
+  },
+  {
+    "idx": 250,
+    "name": "在排序数组中查找数字",
+    "url": "https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/submissions/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "数组",
+    "ext": ""
+  },
+  {
+    "idx": 251,
+    "name": "二叉搜索树的第K大节点",
+    "url": "https://leetcode.cn/problems/kth-smallest-element-in-a-bst/description/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "二叉树",
+    "ext": ""
+  },
+  {
+    "idx": 252,
+    "name": "二叉树的深度",
+    "url": "https://leetcode.cn/problems/maximum-depth-of-binary-tree/",
+    "grade": "easy",
+    "tags": ["剑指offer"],
+    "algoCategory": "二叉树",
+    "ext": ""
+  },
+  {
+    "idx": 253,
+    "name": "数组中数字出现的次数",
+    "url": "https://leetcode.cn/problems/single-number-iii/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "位运算",
+    "ext": ""
+  },
+  {
+    "idx": 254,
+    "name": "和为S的两个数字",
+    "url": "https://leetcode.cn/problems/two-sum/",
+    "grade": "easy",
+    "tags": ["剑指offer"],
+    "algoCategory": "数组",
+    "ext": ""
+  },
+  {
+    "idx": 255,
+    "name": "翻转字符串",
+    "url": "https://leetcode.cn/problems/reverse-words-in-a-string/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "字符串",
+    "ext": ""
+  },
+  {
+    "idx": 256,
+    "name": "队列的最大值",
+    "url": "https://leetcode.cn/problems/sliding-window-maximum/",
+    "grade": "hard",
+    "tags": ["剑指offer"],
+    "algoCategory": "队列",
+    "ext": ""
+  },
+  {
+    "idx": 257,
+    "name": "n个骰子的点数",
+    "url": "https://leetcode-cn.com/problems/nge-tou-zi-de-dian-shu-lcof/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 258,
+    "name": "扑克牌中的顺子",
+    "url": "https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/",
+    "grade": "easy",
+    "tags": ["剑指offer"],
+    "algoCategory": "数组",
+    "ext": ""
+  },
+  {
+    "idx": 259,
+    "name": "圆圈中最后剩下的数字",
+    "url": "https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "数学",
+    "ext": ""
+  },
+  {
+    "idx": 260,
+    "name": "股票的最大利润",
+    "url": "https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/",
+    "grade": "easy",
+    "tags": ["剑指offer"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 261,
+    "name": "求1+2+…+n",
+    "url": "https://leetcode-cn.com/problems/qiu-12n-lcof/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "递归",
+    "ext": ""
+  },
+  {
+    "idx": 262,
+    "name": "不用加减乘除做加法",
+    "url": "https://leetcode-cn.com/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/",
+    "grade": "easy",
+    "tags": ["剑指offer"],
+    "algoCategory": "位运算",
+    "ext": ""
+  },
+  {
+    "idx": 263,
+    "name": "构建乘积数组",
+    "url": "https://leetcode-cn.com/problems/gou-jian-cheng-ji-shu-zu-lcof/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "数组",
+    "ext": ""
+  },
+  {
+    "idx": 264,
+    "name": "把字符串转换成整数",
+    "url": "https://leetcode.cn/problems/string-to-integer-atoi/",
+    "grade": "medium",
+    "tags": ["剑指offer"],
+    "algoCategory": "字符串",
+    "ext": ""
+  },
+  {
+    "idx": 265,
+    "name": "二叉搜索树的最近公共祖先",
+    "url": "https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+    "grade": "easy",
+    "tags": ["剑指offer"],
+    "algoCategory": "二叉树",
     "ext": ""
   }
 ]

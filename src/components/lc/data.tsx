@@ -26,4 +26,5 @@ export const grade = [
 export const source = [
   { label: "🐂 nowcoder101", value: "nowcoder101" },
   { label: "🔥 LeetCode Hot 100", value: "🔥 LeetCode Hot 100" },
+  { label: "🪡 剑指offer", value: "剑指offer" },
 ];
