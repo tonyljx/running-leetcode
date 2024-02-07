@@ -20,6 +20,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import { Icons } from "@/components/icons";
 
 async function getData(): Promise<DataType[]> {
   // Fetch data from your API here.
@@ -48,21 +49,23 @@ export default async function Home() {
           priority
         /> */}
         <header className="flex justify-between w-full">
-          <Link href="/">
-            <Image
-              className="relative rounded-full"
-              // dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert
-              src="/ai.svg"
-              alt="Logo"
-              width={45}
-              height={40}
-              priority
-            />
-          </Link>
-
-          <div className="flex items-center gap-3 ">
+          <div className="flex gap-3 items-center">
+            <Link href="/" className="flex gap-2 items-center">
+              <Image
+                className="relative rounded-full"
+                // dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert
+                src="/ai.svg"
+                alt="Logo"
+                width={45}
+                height={40}
+                priority
+              />
+              <span className="font-semibold text-xl">RunningCode</span>
+            </Link>
             <Dialog>
-              <DialogTrigger>Changelog</DialogTrigger>
+              <DialogTrigger className="hover:text-sky-500 duration-150 transition-all">
+                Changelog
+              </DialogTrigger>
               <DialogContent>
                 <DialogHeader>
                   <DialogTitle>Changelog</DialogTitle>
@@ -72,17 +75,23 @@ export default async function Home() {
             </Dialog>
 
             <Dialog>
-              <DialogTrigger>后续开发计划</DialogTrigger>
+              <DialogTrigger className="hover:text-sky-500 duration-150 transition-all">
+                后续开发计划
+              </DialogTrigger>
               <DialogContent>
                 <DialogHeader>
                   <DialogTitle>开发计划</DialogTitle>
                 </DialogHeader>
                 <ul className="list-disc">
                   <li>收藏功能/类错题本</li>
+                  <li>收录剑指offer leetcode题目</li>
+                  <li>基于微信公众号做登录, 保存用户的信息</li>
                 </ul>
               </DialogContent>
             </Dialog>
+          </div>
 
+          <div className="flex items-center gap-3 ">
             <Link
               href="https://github.com/tonyljx/running-leetcode"
               target="_blank"
@@ -97,6 +106,25 @@ export default async function Home() {
             >
               <XOutlined className="text-[24px]" />
             </Link>
+            <Link
+              href="https://www.xiaohongshu.com/user/profile/5b69c8ba3cf76d0001fcdab2"
+              target="_blank"
+              className="p-2 hover:bg-slate-200/85 transition-colors duration-150 rounded"
+            >
+              <Icons.redbook className="w-[24px] h-[24px]" />
+            </Link>
+
+            <Dialog>
+              <DialogTrigger className="p-2 hover:bg-slate-200/85 transition-colors duration-150 rounded">
+                <Icons.wechat className="w-[24px] h-[24px]" />
+              </DialogTrigger>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>公众号-记录开发过程以及题解</DialogTitle>
+                </DialogHeader>
+                <img src="/wechat-yasuo.png" alt="wechat" />
+              </DialogContent>
+            </Dialog>
           </div>
         </header>
 
@@ -122,7 +150,7 @@ export default async function Home() {
         <DataTable columns={columns} data={data} />
       </div>
 
-      <Ref />
+      <Ref className="mb-10" />
 
       <Footer />
     </main>
