@@ -7,6 +7,7 @@ import { ConfigProvider } from "antd";
 // const inter = Inter({ subsets: ["latin"] });
 import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
+import Script from "next/script";
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -42,6 +43,12 @@ export default function RootLayout({
           </ConfigProvider>
         </AntdRegistry>
       </body>
+
+      <Script
+        async
+        src="https://umami.runningpig.top/script.js"
+        data-website-id="4c9e3c07-30f6-4304-87c7-addaf659e8bd"
+      ></Script>
     </html>
   );
 }
