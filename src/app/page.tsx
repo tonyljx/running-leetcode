@@ -36,7 +36,7 @@ export default async function Home() {
   const data = await getData();
   return (
     <main className="container space-y-6  min-h-screen items-center  bg-slate-100/50 z-[-2] pt-6">
-      <div className="relative flex  flex-col  gap-3 place-items-center mb-3 w-full">
+      <div className="relative flex flex-col  gap-3 place-items-center mb-3 w-full">
         {/* before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] before:absolute before:h-[300px] */}
         {/* after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] */}
         {/* <Image
@@ -48,8 +48,8 @@ export default async function Home() {
           height={37}
           priority
         /> */}
-        <header className="flex justify-between w-full">
-          <div className="flex gap-3 items-center">
+        <header className="flex flex-col md:flex-row justify-between w-full">
+          <div className="flex gap-3 items-center flex-col md:flex-row">
             <Link href="/" className="flex gap-2 items-center">
               <Image
                 className="relative rounded-full"

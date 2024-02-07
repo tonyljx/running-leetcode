@@ -45,22 +45,26 @@ export default function Footer({}: Props) {
         <div className="flex flex-col gap-3">
           <p className="font-bold">Product</p>
           <Link
-            href="/"
+            href="https://next.runningpig.top/zh"
+            target="_blank"
             className="transition-colors duration-200 hover:text-blue-500"
           >
-            Features
+            RunningDev | Nextjs 模板站点
           </Link>
+
           <Link
             href="/"
             className="transition-colors duration-200 hover:text-blue-500"
           >
-            Pricing
+            RunningCode | 刷题效率工具
           </Link>
+
           <Link
-            href="/"
+            href="https://www.gpts-store.net/"
+            target="_blank"
             className="transition-colors duration-200 hover:text-blue-500"
           >
-            Docs
+            GPTs导航站
           </Link>
         </div>
         <div className="flex flex-col gap-3">
