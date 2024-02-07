@@ -9,7 +9,7 @@ export const algoCategories = [
   { label: "二分查找", value: "二分查找" },
   { label: "哈希", value: "哈希" },
   { label: "动态规划", value: "动态规划" },
-  { label: "贪心算法", value: "贪心算法" },
+  { label: "贪心", value: "贪心" },
   { label: "滑动窗口", value: "滑动窗口" },
   { label: "堆", value: "堆" },
   { label: "图", value: "图" },
