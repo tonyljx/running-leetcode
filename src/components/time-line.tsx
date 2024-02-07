@@ -17,14 +17,18 @@ export default function MyTimeLine({}: Props) {
       children: (
         <div>
           <span>2024-02-06</span> <p>新增🔥 LeetCode 热题 HOT 100</p>
-          <p>本地存储做题记录</p>
         </div>
       ),
       color: "green",
     },
     {
       dot: <ClockCircleOutlined style={{ fontSize: "16px" }} />,
-      children: "TBC",
+      children: (
+        <>
+          <p>本地存储做题记录</p>
+          <p>收录完整的牛客101</p>
+        </>
+      ),
     },
   ];
   return <Timeline items={items} mode="alternate" />;

@@ -61,6 +61,28 @@ export default async function Home() {
           </Link>
 
           <div className="flex items-center gap-3 ">
+            <Dialog>
+              <DialogTrigger>Changelog</DialogTrigger>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>Changelog</DialogTitle>
+                </DialogHeader>
+                <MyTimeLine />
+              </DialogContent>
+            </Dialog>
+
+            <Dialog>
+              <DialogTrigger>后续开发计划</DialogTrigger>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>开发计划</DialogTitle>
+                </DialogHeader>
+                <ul className="list-disc">
+                  <li>收藏功能/类错题本</li>
+                </ul>
+              </DialogContent>
+            </Dialog>
+
             <Link
               href="https://github.com/tonyljx/running-leetcode"
               target="_blank"
@@ -75,18 +97,6 @@ export default async function Home() {
             >
               <XOutlined className="text-[24px]" />
             </Link>
-            {/* <CustomModal buttonText="Changelog">
-              <MyTimeLine />
-            </CustomModal> */}
-            <Dialog>
-              <DialogTrigger>Changelog</DialogTrigger>
-              <DialogContent>
-                <DialogHeader>
-                  <DialogTitle>Changelog</DialogTitle>
-                </DialogHeader>
-                <MyTimeLine />
-              </DialogContent>
-            </Dialog>
           </div>
         </header>
 
@@ -100,6 +110,9 @@ export default async function Home() {
         <p className="max-w-xl text-center text-slate-400">
           目前面试笔试中大量出现的题目都是出自 剑指 offer、牛客 101 以及 lc
           hot100, 所以我按照分类收录了这些题目, 刷题吧, 王子公主们!🤣
+        </p>
+        <p>
+          目前收录题目数: <span className="font-bold">{data.length}</span>
         </p>
       </div>
 

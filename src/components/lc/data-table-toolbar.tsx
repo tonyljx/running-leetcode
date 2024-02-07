@@ -9,7 +9,7 @@ import { DataTableFacetedFilter } from "./data-table-facet-filter";
 import { Button } from "../ui/button";
 import { DataTableViewOptions } from "./data-table-view-options";
 import { X } from "lucide-react";
-import { algoCategories, grade } from "./data";
+import { algoCategories, grade, source } from "./data";
 
 interface DataTableToolbarProps<TData> {
   table: Table<TData>;
@@ -45,6 +45,13 @@ export function DataTableToolbar<TData>({
             column={table.getColumn("grade")}
             title="难度"
             options={grade}
+          />
+        )}
+        {table.getColumn("grade") && (
+          <DataTableFacetedFilter
+            column={table.getColumn("tags")}
+            title="来源"
+            options={source}
           />
         )}
         {isFiltered && (

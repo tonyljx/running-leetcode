@@ -314,7 +314,601 @@
     "algoCategory": "二叉树",
     "ext": ""
   },
+  {
+    "idx": 36,
+    "name": "二分查找-I",
+    "url": "https://www.nowcoder.com/practice/d3df40bd23594118b57554129cadf47b?tpId=295&tqId=1499549&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "easy",
+    "tags": ["nowcoder101"],
+    "algoCategory": "二分查找/排序",
+    "ext": ""
+  },
+  {
+    "idx": 37,
+    "name": "二维数组中的查找",
+    "url": "https://www.nowcoder.com/practice/abc3fe2ce8e146608e868a70efebf62e?tpId=295&tqId=23256&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "二分查找/排序",
+    "ext": ""
+  },
+  {
+    "idx": 38,
+    "name": "寻找峰值",
+    "url": "https://www.nowcoder.com/practice/fcf87540c4f347bcb4cf720b5b350c76?tpId=295&tqId=2227748&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "二分查找/排序",
+    "ext": ""
+  },
+  {
+    "idx": 39,
+    "name": "数组中的逆序对",
+    "url": "https://www.nowcoder.com/practice/96bd6684e04a44eb80e6a68efc0ec6c5?tpId=295&tqId=23260&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "二分查找/排序",
+    "ext": ""
+  },
+  {
+    "idx": 40,
+    "name": "旋转数组的最小数字",
+    "url": "https://www.nowcoder.com/practice/9f3231a991af4f55b95579b44b7a01ba?tpId=295&tqId=23269&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "easy",
+    "tags": ["nowcoder101"],
+    "algoCategory": "二分查找/排序",
+    "ext": ""
+  },
+  {
+    "idx": 41,
+    "name": "比较版本号",
+    "url": "https://www.nowcoder.com/practice/2b317e02f14247a49ffdbdba315459e7?tpId=295&tqId=1024572&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "二分查找/排序",
+    "ext": ""
+  },
+  {
+    "idx": 42,
+    "name": "用两个栈实现队列",
+    "url": "https://www.nowcoder.com/practice/54275ddae22f475981afa2244dd448c6?tpId=295&tqId=23281&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "easy",
+    "tags": ["nowcoder101"],
+    "algoCategory": "栈",
+    "ext": ""
+  },
+  {
+    "idx": 43,
+    "name": "包含min函数的栈",
+    "url": "https://www.nowcoder.com/practice/4c776177d2c04c2494f2555c9fcc1e49?tpId=295&tqId=23268&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "easy",
+    "tags": ["nowcoder101"],
+    "algoCategory": "栈",
+    "ext": ""
+  },
+  {
+    "idx": 44,
+    "name": "有效括号序列",
+    "url": "https://www.nowcoder.com/practice/37548e94a270412c8b9fb85643c8ccc2?tpId=295&tqId=726&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "easy",
+    "tags": ["nowcoder101"],
+    "algoCategory": "栈",
+    "ext": ""
+  },
+  {
+    "idx": 45,
+    "name": "滑动窗口的最大值",
+    "url": "https://www.nowcoder.com/practice/1624bc35a45c42c0bc17d17fa0cba788?tpId=295&tqId=23458&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "hard",
+    "tags": ["nowcoder101"],
+    "algoCategory": "队列",
+    "ext": ""
+  },
+  {
+    "idx": 46,
+    "name": "最小的K个数",
+    "url": "https://www.nowcoder.com/practice/6a296eb82cf844ca8539b57c23e6e9bf?tpId=295&tqId=23263&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "堆",
+    "ext": ""
+  },
+  {
+    "idx": 47,
+    "name": "寻找第K大",
+    "url": "https://www.nowcoder.com/practice/e016ad9b7f0b45048c58a9f27ba618bf?tpId=295&tqId=44581&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "堆",
+    "ext": ""
+  },
+  {
+    "idx": 48,
+    "name": "数据流中的中位数",
+    "url": "https://www.nowcoder.com/practice/9be0172896bd43948f8a32fb954e1be1?tpId=295&tqId=23457&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "堆",
+    "ext": ""
+  },
+  {
+    "idx": 49,
+    "name": "表达式求值",
+    "url": "https://www.nowcoder.com/practice/c215ba61c8b1443b996351df929dc4d4?tpId=295&tqId=1076787&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "栈",
+    "ext": ""
+  },
+  {
+    "idx": 50,
+    "name": "两数之和",
+    "url": "https://www.nowcoder.com/practice/20ef0972485e41019e39543e8e895b7f?tpId=295&tqId=745&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "easy",
+    "tags": ["nowcoder101"],
+    "algoCategory": "哈希",
+    "ext": ""
+  },
+  {
+    "idx": 51,
+    "name": "数组中出现次数超过一半的数字",
+    "url": "https://www.nowcoder.com/practice/e8a1b01a2df14cb2b228b30ee6a92163?tpId=295&tqId=23271&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "easy",
+    "tags": ["nowcoder101"],
+    "algoCategory": "哈希",
+    "ext": ""
+  },
+  {
+    "idx": 52,
+    "name": "数组中只出现一次的两个数字",
+    "url": "https://www.nowcoder.com/practice/389fc1c3d3be4479a154f63f495abff8?tpId=295&tqId=1375231&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "哈希",
+    "ext": ""
+  },
+  {
+    "idx": 53,
+    "name": "缺失的第一个正整数",
+    "url": "https://www.nowcoder.com/practice/50ec6a5b0e4e45348544348278cdcee5?tpId=295&tqId=2188893&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "哈希",
+    "ext": ""
+  },
+  {
+    "idx": 54,
+    "name": "三数之和",
+    "url": "https://www.nowcoder.com/practice/345e2ed5f81d4017bbb8cc6055b0b711?tpId=295&tqId=731&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "哈希",
+    "ext": ""
+  },
 
+  {
+    "idx": 55,
+    "name": "没有重复项数字的全排列",
+    "url": "https://www.nowcoder.com/practice/4bcf3081067a4d028f95acee3ddcd2b1?tpId=295&tqId=701&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "回溯",
+    "ext": ""
+  },
+  {
+    "idx": 56,
+    "name": "有重复项数字的全排列",
+    "url": "https://www.nowcoder.com/practice/a43a2b986ef34843ac4fdd9159b69863?tpId=295&tqId=700&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "回溯",
+    "ext": ""
+  },
+  {
+    "idx": 57,
+    "name": "岛屿数量",
+    "url": "https://www.nowcoder.com/practice/0c9664d1554e466aa107d899418e814e?tpId=295&tqId=1024684&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "回溯",
+    "ext": ""
+  },
+  {
+    "idx": 58,
+    "name": "字符串的排列",
+    "url": "https://www.nowcoder.com/practice/fe6b651b66ae47d7acce78ffdd9a96c7?tpId=295&tqId=23291&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "回溯",
+    "ext": ""
+  },
+  {
+    "idx": 59,
+    "name": "N皇后问题",
+    "url": "https://www.nowcoder.com/practice/c76408782512486d91eea181107293b6?tpId=295&tqId=1008753&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "hard",
+    "tags": ["nowcoder101"],
+    "algoCategory": "回溯",
+    "ext": ""
+  },
+  {
+    "idx": 60,
+    "name": "括号生成",
+    "url": "https://www.nowcoder.com/practice/c9addb265cdf4cdd92c092c655d164ca?tpId=295&tqId=725&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "回溯",
+    "ext": ""
+  },
+  {
+    "idx": 61,
+    "name": "矩阵最长递增路径",
+    "url": "https://www.nowcoder.com/practice/7a71a88cdf294ce6bdf54c899be967a2?tpId=295&tqId=1076860&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "回溯",
+    "ext": ""
+  },
+  {
+    "idx": 62,
+    "name": "斐波那契数列",
+    "url": "https://www.nowcoder.com/practice/c6c7742f5ba7442aada113136ddea0c3?tpId=295&tqId=23255&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "easy",
+    "tags": ["nowcoder101"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 63,
+    "name": "跳台阶",
+    "url": "https://www.nowcoder.com/practice/8c82a5b80378478f9484d87d1c5f12a4?tpId=295&tqId=23261&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "easy",
+    "tags": ["nowcoder101"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 64,
+    "name": "最小花费爬楼梯",
+    "url": "https://www.nowcoder.com/practice/6fe0302a058a4e4a834ee44af88435c7?tpId=295&tqId=2366451&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "easy",
+    "tags": ["nowcoder101"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 65,
+    "name": "最长公共子序列(二)",
+    "url": "https://www.nowcoder.com/practice/6d29638c85bb4ffd80c020fe244baf11?tpId=295&tqId=991075&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 66,
+    "name": "最长公共子串",
+    "url": "https://www.nowcoder.com/practice/f33f5adc55f444baa0e0ca87ad8a6aac?tpId=295&tqId=991150&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 67,
+    "name": "不同路径的数目(一)",
+    "url": "https://www.nowcoder.com/practice/166eaff8439d4cd898e3ba933fbc6358?tpId=295&tqId=685&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "easy",
+    "tags": ["nowcoder101"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 68,
+    "name": "矩阵的最小路径和",
+    "url": "https://www.nowcoder.com/practice/7d21b6be4c6b429bb92d219341c4f8bb?tpId=295&tqId=1009012&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 69,
+    "name": "把数字翻译成字符串",
+    "url": "https://www.nowcoder.com/practice/046a55e6cd274cffb88fc32dba695668?tpId=295&tqId=1024831&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 70,
+    "name": "兑换零钱(一)",
+    "url": "https://www.nowcoder.com/practice/3911a20b3f8743058214ceaa099eeb45?tpId=295&tqId=988994&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 71,
+    "name": "最长上升子序列(一)",
+    "url": "https://www.nowcoder.com/practice/5164f38b67f846fb8699e9352695cd2f?tpId=295&tqId=2281434&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 72,
+    "name": "连续子数组的最大和",
+    "url": "https://www.nowcoder.com/practice/459bd355da1549fa8a49e350bf3df484?tpId=295&tqId=23259&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "easy",
+    "tags": ["nowcoder101"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 73,
+    "name": "最长回文子串",
+    "url": "https://www.nowcoder.com/practice/b4525d1d84934cf280439aeecc36f4af?tpId=295&tqId=25269&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 74,
+    "name": "数字字符串转化成IP地址",
+    "url": "https://www.nowcoder.com/practice/ce73540d47374dbe85b3125f57727e1e?tpId=295&tqId=653&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 75,
+    "name": "编辑距离(一)",
+    "url": "https://www.nowcoder.com/practice/6a1483b5be1547b1acd7940f867be0da?tpId=295&tqId=2294660&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "hard",
+    "tags": ["nowcoder101"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 76,
+    "name": "正则表达式匹配",
+    "url": "https://www.nowcoder.com/practice/28970c15befb4ff3a264189087b99ad4?tpId=295&tqId=1375406&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "hard",
+    "tags": ["nowcoder101"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 77,
+    "name": "最长的括号子串",
+    "url": "https://www.nowcoder.com/practice/45fd68024a4c4e97a8d6c45fc61dc6ad?tpId=295&tqId=715&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "hard",
+    "tags": ["nowcoder101"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 78,
+    "name": "打家劫舍(一)",
+    "url": "https://www.nowcoder.com/practice/c5fbf7325fbd4c0ea3d0c3ea6bc6cc79?tpId=295&tqId=2285793&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 79,
+    "name": "打家劫舍(二)",
+    "url": "https://www.nowcoder.com/practice/a5c127769dd74a63ada7bff37d9c5815?tpId=295&tqId=2285837&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 80,
+    "name": "买卖股票的最好时机(一)",
+    "url": "https://www.nowcoder.com/practice/64b4262d4e6d4f6181cd45446a5821ec?tpId=295&tqId=625&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "easy",
+    "tags": ["nowcoder101"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 81,
+    "name": "买卖股票的最好时机(二)",
+    "url": "https://www.nowcoder.com/practice/9e5e3c2603064829b0a0bbfca10594e9?tpId=295&tqId=1073471&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 82,
+    "name": "买卖股票的最好时机(三)",
+    "url": "https://www.nowcoder.com/practice/4892d3ff304a4880b7a89ba01f48daf9?tpId=295&tqId=1073487&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "hard",
+    "tags": ["nowcoder101"],
+    "algoCategory": "动态规划",
+    "ext": ""
+  },
+  {
+    "idx": 83,
+    "name": "字符串变形",
+    "url": "https://www.nowcoder.com/practice/c3120c1c1bc44ad986259c0cf0f0b80e?tpId=295&tqId=44664&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "easy",
+    "tags": ["nowcoder101"],
+    "algoCategory": "字符串",
+    "ext": ""
+  },
+  {
+    "idx": 84,
+    "name": "最长公共前缀",
+    "url": "https://www.nowcoder.com/practice/28eb3175488f4434a4a6207f6f484f47?tpId=295&tqId=732&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "easy",
+    "tags": ["nowcoder101"],
+    "algoCategory": "字符串",
+    "ext": ""
+  },
+  {
+    "idx": 85,
+    "name": "验证IP地址",
+    "url": "https://www.nowcoder.com/practice/55fb3c68d08d46119f76ae2df7566880?tpId=295&tqId=1024725&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "字符串",
+    "ext": ""
+  },
+  {
+    "idx": 86,
+    "name": "大数加法",
+    "url": "https://www.nowcoder.com/practice/11ae12e8c6fe48f883cad618c2e81475?tpId=295&tqId=1061819&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "字符串",
+    "ext": ""
+  },
+  {
+    "idx": 87,
+    "name": "合并两个有序的数组",
+    "url": "https://www.nowcoder.com/practice/89865d4375634fc484f3a24b7fe65665?tpId=295&tqId=658&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "easy",
+    "tags": ["nowcoder101"],
+    "algoCategory": "双指针",
+    "ext": ""
+  },
+  {
+    "idx": 88,
+    "name": "判断是否为回文字符串",
+    "url": "https://www.nowcoder.com/practice/e297fdd8e9f543059b0b5f05f3a7f3b2?tpId=295&tqId=1089616&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "easy",
+    "tags": ["nowcoder101"],
+    "algoCategory": "双指针",
+    "ext": ""
+  },
+  {
+    "idx": 89,
+    "name": "合并区间",
+    "url": "https://www.nowcoder.com/practice/69f4e5b7ad284a478777cb2a17fb5e6a?tpId=295&tqId=691&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "双指针",
+    "ext": ""
+  },
+  {
+    "idx": 90,
+    "name": "最小覆盖子串",
+    "url": "https://www.nowcoder.com/practice/c466d480d20c4c7c9d322d12ca7955ac?tpId=295&tqId=670&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "hard",
+    "tags": ["nowcoder101"],
+    "algoCategory": "双指针",
+    "ext": ""
+  },
+  {
+    "idx": 91,
+    "name": "反转字符串",
+    "url": "https://www.nowcoder.com/practice/c3a6afee325e472386a1c4eb1ef987f3?tpId=295&tqId=1024337&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "easy",
+    "tags": ["nowcoder101"],
+    "algoCategory": "双指针",
+    "ext": ""
+  },
+  {
+    "idx": 92,
+    "name": "最长无重复子数组",
+    "url": "https://www.nowcoder.com/practice/b56799ebfd684fb394bd315e89324fb4?tpId=295&tqId=1008889&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "双指针",
+    "ext": ""
+  },
+  {
+    "idx": 93,
+    "name": "盛水最多的容器",
+    "url": "https://www.nowcoder.com/practice/3d8d6a8e516e4633a2244d2934e5aa47?tpId=295&tqId=2284579&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "双指针",
+    "ext": ""
+  },
+  {
+    "idx": 94,
+    "name": "接雨水问题",
+    "url": "https://www.nowcoder.com/practice/31c1aed01b394f0b8b7734de0324e00f?tpId=295&tqId=1002045&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "hard",
+    "tags": ["nowcoder101"],
+    "algoCategory": "双指针",
+    "ext": ""
+  },
+  {
+    "idx": 95,
+    "name": "分糖果问题",
+    "url": "https://www.nowcoder.com/practice/76039109dd0b47e994c08d8319faa352?tpId=295&tqId=1008104&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "hard",
+    "tags": ["nowcoder101"],
+    "algoCategory": "贪心",
+    "ext": ""
+  },
+  {
+    "idx": 96,
+    "name": "主持人调度（二）",
+    "url": "https://www.nowcoder.com/practice/4edf6e6d01554870a12f218c94e8a299?tpId=295&tqId=1267319&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "贪心",
+    "ext": ""
+  },
+  {
+    "idx": 97,
+    "name": "旋转数组",
+    "url": "https://www.nowcoder.com/practice/e19927a8fd5d477794dac67096862042?tpId=295&tqId=1024689&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "数组",
+    "ext": ""
+  },
+  {
+    "idx": 98,
+    "name": "螺旋矩阵",
+    "url": "https://www.nowcoder.com/practice/7edf70f2d29c4b599693dc3aaeea1d31?tpId=295&tqId=693&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "easy",
+    "tags": ["nowcoder101"],
+    "algoCategory": "数组",
+    "ext": ""
+  },
+  {
+    "idx": 99,
+    "name": "顺时针旋转矩阵",
+    "url": "https://www.nowcoder.com/practice/2e95333fbdd4451395066957e24909cc?tpId=295&tqId=25283&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "medium",
+    "tags": ["nowcoder101"],
+    "algoCategory": "数组",
+    "ext": ""
+  },
+  {
+    "idx": 100,
+    "name": "设计LRU缓存结构",
+    "url": "https://www.nowcoder.com/practice/5dfded165916435d9defb053c63f1e84?tpId=295&tqId=2427094&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "hard",
+    "tags": ["nowcoder101"],
+    "algoCategory": "设计",
+    "ext": ""
+  },
+  {
+    "idx": 101,
+    "name": "设计LFU缓存结构",
+    "url": "https://www.nowcoder.com/practice/93aacb4a887b46d897b00823f30bfea1?tpId=295&tqId=1006014&ru=/exam/oj&qru=/ta/format-top101/question-ranking&sourceUrl=%2Fexam%2Foj",
+    "grade": "hard",
+    "tags": ["nowcoder101"],
+    "algoCategory": "设计",
+    "ext": ""
+  },
   {
     "idx": 102,
     "name": "两数之和",
@@ -519,7 +1113,7 @@
     "url": "https://leetcode.cn/problems/group-anagrams?envType=featured-list&envId=2cktkvj?envType=featured-list&envId=2cktkvj",
     "grade": "medium",
     "tags": ["🔥 LeetCode Hot 100"],
-    "algoCategory": "哈希表",
+    "algoCategory": "哈希",
     "ext": ""
   },
   {
