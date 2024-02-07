@@ -7,7 +7,7 @@ type Props = {};
 
 export default function Footer({}: Props) {
   return (
-    <footer className="mt-20   flex w-full flex-wrap gap-10 border-t border-t-2 px-8 py-12 ">
+    <footer className="mt-20   flex w-full flex-wrap gap-10  border-t-2 px-8 py-12 ">
       <div className="mr-auto flex flex-1 flex-col">
         <p className="flex-1">RunningCode</p>
         <div className="flex items-center gap-1">

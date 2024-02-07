@@ -1,11 +1,14 @@
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
 
-type Props = {};
+type Props = {
+  className?: string;
+};
 
-export default function Ref({}: Props) {
+export default function Ref({ className }: Props) {
   return (
-    <div className="space-y-3">
+    <div className={cn("space-y-3", className)}>
       <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight">
         Source
       </h2>
