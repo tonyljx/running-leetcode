@@ -35,7 +35,7 @@ async function getData(): Promise<DataType[]> {
 export default async function Home() {
   const data = await getData();
   return (
-    <main className="container space-y-6  min-h-screen items-center  bg-slate-100/50 z-[-2] pt-6">
+    <main className="container space-y-10  min-h-screen items-center   z-[-2] pt-6">
       <div className="relative flex flex-col  gap-3 place-items-center mb-3 w-full">
         {/* before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] before:absolute before:h-[300px] */}
         {/* after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] */}
@@ -150,7 +150,7 @@ export default async function Home() {
         <DataTable columns={columns} data={data} />
       </div>
 
-      <Ref className="mb-10" />
+      <Ref className="" />
 
       <Footer />
     </main>
