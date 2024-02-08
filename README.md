@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# RunningCode
 
-## Getting Started
+![image-20240208120136513](https://image.chatrepo.top/image-20240208120136513.png)
 
-First, run the development server:
+做了个算法小工具网站，收录了面试最高频的算法题~ 可以按【题目类型】，【题目出处】，以及【难易程度】去索引，帮助一刷，二刷的同学快速准备算法题~
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+数据都是基于公开数据人工整理 + GPT 进行打标签。希望可以点个 star⭐，给我一点坚持下去的动力，感激不尽！
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+网址是：[ https://code.gpthanghai.com/ ](https://code.gpthanghai.com/) ，下面这个是网站截图，页面也很清爽，欢迎体验给出意见哈～
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 背景
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+其实源自于逼着有一天想重新分类刷题的时候，发现以下痛点
 
-## Learn More
+- 剑指 offer 在 leetcode 已经没有专门的收录页了，看了下目前版权应该在牛客那里，目前 lc 的题目比较分散，没有做题入口
+- leetcode hot100 的页面也没有按**_算法题的类型_**去分类做标签，其实对于 **想分门别类** 单点突破的同学来说不太友好
 
-To learn more about Next.js, take a look at the following resources:
+## 网站特点
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 📚 只收录重要的题目：收录了完整的牛客 101 和 leetcode hot100，以及剑指 offer：这些题目对于面试来说都是非常高频的题目，优先级应该是最高的
+- 🤖 分门别类：结合笔者秋招经历，分门别类刷题是一种前期快速找到感觉和培养解题框架的做法，所以一方面也是为了服务我自己，另一方面也想让大家更方便的去根据自己薄弱点去刷题
+- 📦 聚合多个来源：目前收录了牛客 101 和 leetcode hot 100 以及 leetcode 上的剑指 offer 题目（因为牛客上的剑指 offer 题需要付费买了书才能刷，所以没有贴）
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 后续迭代计划
 
-## Deploy on Vercel
+- [ ] 登录功能+错题本功能：根据用户的历史操作记录，可以标记用户的错题本，针对错题本进行复习（现在是直接编译成 html 的，后面这个功能要上数据库，可能会收费，看大家的投票）
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# 联系我
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+有任何问题或建议，请联系 15889666941@163.com
+
+建议关注官方公众号 PigCode，我会记录相关题解，如果感兴趣的话也可以分享建站过程～
+
+<img src="https://image.chatrepo.top/wechat-yasuo.png" alt="wechat-yasuo" style="zoom:50%;" />
