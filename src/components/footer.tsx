@@ -2,6 +2,13 @@ import React from "react";
 import { Icons } from "./icons";
 import Link from "next/link";
 import Image from "next/image";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "./ui/dialog";
 
 type Props = {};
 
@@ -9,7 +16,25 @@ export default function Footer({}: Props) {
   return (
     <footer className="mt-20   flex w-full flex-wrap gap-10  border-t-2 px-8 py-12 ">
       <div className="mr-auto flex flex-1 flex-col">
-        <p className="flex-1">RunningCode</p>
+        <p className="flex-1">
+          <span>RunningCode</span>
+          <br />
+          <Dialog>
+            <DialogTrigger className="hover:text-sky-500 duration-150 transition-all">
+              后续开发计划
+            </DialogTrigger>
+            <DialogContent>
+              <DialogHeader>
+                <DialogTitle>开发计划</DialogTitle>
+              </DialogHeader>
+              <ul className="list-disc">
+                <li>收藏功能/类错题本</li>
+                <li>收录剑指offer leetcode题目</li>
+                <li>基于微信公众号做登录, 保存用户的信息</li>
+              </ul>
+            </DialogContent>
+          </Dialog>
+        </p>
         <div className="flex items-center gap-1">
           <Link
             target="_blank"

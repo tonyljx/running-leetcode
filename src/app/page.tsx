@@ -74,21 +74,13 @@ export default async function Home() {
               </DialogContent>
             </Dialog>
 
-            <Dialog>
-              <DialogTrigger className="hover:text-sky-500 duration-150 transition-all">
-                后续开发计划
-              </DialogTrigger>
-              <DialogContent>
-                <DialogHeader>
-                  <DialogTitle>开发计划</DialogTitle>
-                </DialogHeader>
-                <ul className="list-disc">
-                  <li>收藏功能/类错题本</li>
-                  <li>收录剑指offer leetcode题目</li>
-                  <li>基于微信公众号做登录, 保存用户的信息</li>
-                </ul>
-              </DialogContent>
-            </Dialog>
+            <Link
+              href="https://gpthanghai.com/posts/gpt/gpt-plus.html"
+              target="_blank"
+              className="hover:text-sky-500 duration-150 transition-all"
+            >
+              ⭐️GPT Plus升级
+            </Link>
           </div>
 
           <div className="flex items-center gap-3 ">
