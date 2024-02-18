@@ -98,13 +98,14 @@ export default async function Home() {
             >
               <XOutlined className="text-[24px]" />
             </Link>
-            <Link
+
+            {/* <Link
               href="https://www.xiaohongshu.com/user/profile/5b69c8ba3cf76d0001fcdab2"
               target="_blank"
               className="p-2 hover:bg-slate-200/85 transition-colors duration-150 rounded"
             >
               <Icons.redbook className="w-[24px] h-[24px]" />
-            </Link>
+            </Link> */}
 
             <Dialog>
               <DialogTrigger className="p-2 hover:bg-slate-200/85 transition-colors duration-150 rounded">
