@@ -19,6 +19,13 @@ export default function Footer({}: Props) {
         <p className="flex-1">
           <span>RunningCode</span>
           <br />
+          <Link
+            className="hover:text-sky-500 duration-150 transition-all"
+            href="https://gpthanghai.com/"
+            target="_blank"
+          >
+            GPT变现/开发思考
+          </Link>
           <Dialog>
             <DialogTrigger className="hover:text-sky-500 duration-150 transition-all">
               后续开发计划
